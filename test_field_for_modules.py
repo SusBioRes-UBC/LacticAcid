@@ -15,7 +15,7 @@ Import packages
 """
 #from brightway2 import*
 #import LA_LCA_module2
-import LA_TEA_module
+import LA_TEA_module2
 
 
 """
@@ -73,12 +73,12 @@ print (lca_obj.top_processes)
 
 """
 ===============
-Test LCA module
+Test TEA module
 ===============
 """
 
 ##create a TEA object
-TEA_obj=LA_TEA()
+TEA_obj=LA_TEA_module2.LA_TEA()
 
 ##import TEA template
 TEA_template_path='/Users/Qingshi/Desktop/for TEA module_local copy/TEA_user_input_Dec.19 sim results_qt_test.xlsx'

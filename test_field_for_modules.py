@@ -81,12 +81,12 @@ Test TEA module
 TEA_obj=LA_TEA_module2.LA_TEA()
 
 ##import TEA template
-TEA_template_path='/Users/Qingshi/Desktop/for TEA module_local copy/TEA_user_input_Dec.19 sim results_qt_test.xlsx'
+TEA_template_path='/Users/Qingshi/Desktop/for TEA module_local copy/TEA_user_input_Dec.19 sim results_template update_Jan 07_qt_test.xlsx'
 TEA_obj.import_parse_template(TEA_template_path)
 
 ##perform intermediate calculations
 TEA_obj.interm_calc()
-print (TEA_obj.NPV)
+print ("NPV: ", TEA_obj.NPV)
 print ("CAPX: ",TEA_obj.total_CAPX)
 print ("net income before tax: ",TEA_obj.net_income_bt)
 print ("net cf: ",TEA_obj.net_cf_at)

@@ -133,7 +133,7 @@ class LA_TEA():
         self.total_IDA_1st_yr=self.interest_1st_yr+self.annual_depreciation+self.amortized_setup_cost
         #Create a list of interest expense throughout the project life time
         self.interest_expense=[self.interest_1st_yr] #starts at yr 1
-        for yr in range (2,self.project_LT):
+        for yr in range (1,self.project_LT): #the interest of yr2 depends on the remaining debt after yr1
             self.interest_expense.append(self.TEA_input_wb.sheets['Financial param'].range('I5').value/100 \
             *(self.total_CAPX-(self.annual_depreciation+self.amortized_setup_cost)*yr))
         
@@ -142,7 +142,7 @@ class LA_TEA():
         self.net_income_bt=[] #starts at yr 1
         self.net_income_at=[] #starts at yr 1
         self.net_income_bt.append(self.EBITDA-self.total_IDA_1st_yr)
-        for yr in range(2,self.project_LT):
+        for yr in range(1,self.project_LT):
             temp_income=self.EBITDA-self.TEA_input_wb.sheets['Financial param'].range('I5').value/100 \
             *(self.total_CAPX-(self.annual_depreciation+self.amortized_setup_cost)*yr)-(self.annual_depreciation+self.amortized_setup_cost)
             self.net_income_bt.append(temp_income)

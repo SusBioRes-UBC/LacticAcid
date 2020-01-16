@@ -1,10 +1,10 @@
 The LCA module provides a quantitative estimation of the environmental impacts of lactic acid production from electrocatalysis
 
 ### Last update: 
-12/18/2019
+01/16/2020
 
 ### Files:
-#### LA_LCA_module2.py: 
+#### LA_LCA_module3.py: 
 class 'LA_LCA' that contains methods for performing a LCA and results analysis
 #### test_field_for_modules.py: 
 a script where different methods of the class 'LA_LCA' are tested
@@ -22,9 +22,12 @@ a script where different methods of the class 'LA_LCA' are tested
   ananlyze the LCA results (e.g., identify top n processes that contribute most to the impacts; groupping results by tag of interest)
   #### .gen_fig: 
   generate a (horizontal) bar plot or a waterfall chart for the LCA results
+  #### .parse_uncertainty
+  parse the uncertainty information of a given activity
+  #### .foreground_monte_carlo
+  perform Monte Carlo simulation for foreground dataset only
   
 ### Methods to be developed for class 'LA_LCA':
   #### .gen_report: 
   export a customized LCA report
-  #### .monte_carlo: 
-  performs Monte Carlo simulations
+

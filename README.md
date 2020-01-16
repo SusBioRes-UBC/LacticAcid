@@ -2,7 +2,8 @@ The LCA module provides a quantitative estimation of the environmental impacts o
 
 ### Last update: 
 01/16/2020
-
+<br/>
+<br/>
 ### Files:
 #### LA_LCA_module3.py: 
 class 'LA_LCA' that contains methods for performing a LCA and results analysis
@@ -26,7 +27,8 @@ a script where different methods of the class 'LA_LCA' are tested
   parse the uncertainty information of a given activity
   #### .foreground_monte_carlo
   perform Monte Carlo simulation for foreground dataset only
-  
+<br/>
+<br/> 
 ### Methods to be developed for class 'LA_LCA':
   #### .gen_report: 
   export a customized LCA report

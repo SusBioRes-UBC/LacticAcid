@@ -6,7 +6,7 @@ The TEA module provides an estimation of the economic performance of lactic acid
 <br/>
 <br/>
 ### Files:
-#### LA_TEA_module2.py:
+#### LA_TEA_module3.py:
 class 'LA_TEA' that contains methods for performing a TEA
 
 #### test_field_for_modules.py:

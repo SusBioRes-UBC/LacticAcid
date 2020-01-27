@@ -70,9 +70,9 @@ class LA_LCA():
     def import_foreground (self,forground_db_name,input_file_path,db_mapping_dict):
         
         """
-        ==============================================
-        import foreground inventory of the LCA project
-        ==============================================
+        =========================================
+        import foreground data of the LCA project
+        =========================================
         """
         ##prepare foreground db
         self.forground_db_name=forground_db_name #this must be identical to the "Database" name in the input spreadsheet 

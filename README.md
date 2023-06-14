@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 ## Code repo for the publication: 
 Tu, Qingshi, Abhijeet Parvatker, Mahlet Garedew, Cole Harris, Matthew Eckelman, Julie B. Zimmerman, Paul T. Anastas, and Chun Ho Lam. "Electrocatalysis for Chemical and Fuel Production: Investigating Climate Change Mitigation Potential and Economic Feasibility." Environmental Science & Technology 55, no. 5 (2021): 3240-3249.
 =======
 
-### Last update: 
+### Last update:
 10/30/2020
 <br/>
 <br/>
@@ -37,4 +36,24 @@ a script where different methods of the class 'LA_LCA' are tested
   #### .gen_report: 
   export a customized LCA report
 
->>>>>>> origin/LA-LCA-module
+=======
+#### LA_TEA_module3.py:
+class 'LA_TEA' that contains methods for performing a TEA
+
+#### test_field_for_modules.py:
+a script where different methods of the class 'LA_TEA' are tested
+<br/>
+<br/>
+### Available methods in class 'LA_TEA':
+#### .import_parse_template
+import TEA data input template
+
+#### .interm_calc
+perform the intermediate calculations to derive values for key variables, such as NPV
+
+#### .update_cells
+update the cells of interest in a given sheet with new values
+
+#### .foreground_monte_carlos
+perform Monte Carlo simulation for foreground dataset only
+

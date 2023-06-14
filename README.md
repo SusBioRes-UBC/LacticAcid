@@ -6,11 +6,10 @@ Tu, Qingshi, Abhijeet Parvatker, Mahlet Garedew, Cole Harris, Matthew Eckelman, 
 10/30/2020
 <br/>
 <br/>
-### Files:
-#### LA_LCA_module3.py: 
+
+=======
+### LA_LCA_module3.py: 
 class 'LA_LCA' that contains methods for performing a LCA and results analysis
-#### test_field_for_modules.py: 
-a script where different methods of the class 'LA_LCA' are tested
 <br/>
 <br/>
 ### Available methods in class 'LA_LCA':
@@ -37,11 +36,8 @@ a script where different methods of the class 'LA_LCA' are tested
   export a customized LCA report
 
 =======
-#### LA_TEA_module3.py:
+### LA_TEA_module3.py:
 class 'LA_TEA' that contains methods for performing a TEA
-
-#### test_field_for_modules.py:
-a script where different methods of the class 'LA_TEA' are tested
 <br/>
 <br/>
 ### Available methods in class 'LA_TEA':

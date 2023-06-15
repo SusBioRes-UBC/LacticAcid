@@ -142,7 +142,12 @@ class LA_TEA:
             *(self.total_CAPX-(self.annual_depreciation+self.amortized_setup_cost)*yr)-(self.annual_depreciation+self.amortized_setup_cost)
             self.net_income_bt.append(temp_income)
         for income in self.net_income_bt:
-            self.net_income_at.append(income*(1-self.TEA_input_wb.sheets['Financial param'].range('I10').value/100))        
+            # if income before tax is positive 
+            if income > 0:
+                self.net_income_at.append(income*(1-self.TEA_input_wb.sheets['Financial param'].range('I10').value/100))  
+            else:
+            # if income before tax is negative
+                self.net_income_at.append(income)      
         #net cash flow after tax
         self.net_cf_at=[-self.total_CAPX] #starts at yr 0
         for income in self.net_income_at:
